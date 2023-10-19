@@ -1,191 +1,262 @@
-.brand {
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Cardo&family=Cinzel&family=Cormorant+Garamond:wght@300&family=Dancing+Script&family=Freehand&family=Merriweather+Sans:ital,wght@1,300&family=Quicksand:wght@300&family=Raleway&display=swap');
+
+
+body {
+    border: 5px solid #D2DE32;
+    margin: 10px 30px;
+    padding: 5px;
+    font-size: xx-large;
+}
+
+.fully-main{
     display: flex;
-    align-items: center;
-    background-color: rgb(233, 212, 157);
+    
+     /* display: none; */
+
+}
+.main1{
+    width:20%;
+    display: none;
     
 }
-.brand img {
-    margin-left: 20px;
+.main1_mob {
+    display: none;
 }
 
-.brand h1 {
-    padding: 20px 0px;
-    margin-left: 40px;
-    font-size: 50px;
-    font-family:'Times New Roman', Times, serif;
-    color: rgb(164, 7, 7);
+
+.STD {
+    font-family: 'Cormorant Garamond', serif;
+
 }
 
-a {
-    text-decoration: none;
-}
-
-@media (max-width:600px) {
-    .brand h1 {
-        font-size: 30px;
-        margin-left: 15px;
-    }
-    .brand img {
-        transform: scale(0.8);
-    }
-}
-
-/* ------------------------------------------- Body ------------------------------------  */
-
-main {
+.main2 {
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
     background-color: beige;
-    margin: 10px 10px;
-    padding: 20px 20px;
-    border: 2px solid grey;
+    width:100%;
+    
+}
+.main2_new {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: beige;
+    width:100%;
+    
+}
+.main2_new_mob {
+    display: none;
+}
+
+.cordially {
+    font-family: 'Calligraffitti', cursive;
+}
+.names {
+    display: inline-flex;
+    gap: 20px;
+    margin: 20px 0px;
+}
+
+.name1, .name2, .and{
+    padding-bottom: 0px;
+    width: 200px;
+    text-align: center;
+    
+}
+
+.fname {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.lname {
+    font-family: 'Freehand', cursive;
+    color: rgb(67, 193, 197);   
+
+}
+
+.and {
+    font-family: 'Quicksand', sans-serif;
+    font-size:80px;
+    color: rgb(61, 154, 157);   
+}
+.date-time {
+    display: flex;
+    gap: 50px;
+    /* justify-items: center; */
+    align-items: center;
+    font-family: 'Cardo', serif;
+    color: rgba(0, 0, 0, 0.552);
+    margin: 20px 0px;
+
+}
+.day, .time{
+    /* font-family: 'Cormorant Garamond', serif; */
+    /* font-family: 'Quicksand', sans-serif; */
+
+    border-top: 3px dotted rgb(193, 143, 42);
+    border-bottom: 3px dotted rgb(193, 143, 42);
+
+}
+
+
+.date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* font-family: 'Quicksand', sans-serif; */
+
+}
+
+.particular-day {
+    font-size: 50px;
+    color: rgba(99, 82, 22, 0.642);
+}
+
+.address {
+    text-align: center;
+font-family: 'Cormorant Garamond', serif;
+    color: rgba(0, 0, 0, 0.803);
+    font-weight: 50;
+    font-size: smaller;
+}
+
+.flowers{
+    image-rendering: crisp-edges;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    
+}
+
+
+/* .wish-one {
+    background-color: white;
+    font-family: 'Freehand', cursive;
+    margin: 5px 50px;
+} */
+.icon {
+    width:20px;
+    height: 20px;
+}
+
+.comment {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    /* background-color: #f9f9f9; */
+
+    /* background-color: #e7e6db;  */
+    background-color: #9EB384;
+    border-radius: 5px;
+    
+    font-size: 18px; /* Slightly smaller font size */
+    line-height: 1.6; /* Increased line height for readability */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12); /* Light drop shadow */
+}
+
+.comment-container {
+    margin: 10px;
+    /* font-family: Arial, sans-serif; Recommended font family */
+    /* font-family: 'Merriweather Sans', sans-serif; */
+    font-family: 'Dancing Script', cursive;
+}
+
+.card {
+    margin-top: 10px;
+}
+
+.card-title {
+    /* font-family: 'Merriweather Sans', sans-serif;
+     */
+     font-family: 'Cinzel', serif;
+}
+
+.thankyou {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 18px;
+    color: green;
+}
+.wish-box {
+    width: 60% !important;
+}
+
+@media (max-width: 600px) {
+
+.fully-main {
+    display: flex;
+    flex-direction: column;
+}
+.main1 {
+    display: none;
+    /* transform: rotate(90deg); Rotate the div by 45 degrees */
+}
+.main1_mob {
+    display: none;
+    /* display: inline; */
+    height: 70px;
+}
+.main2 {
+    padding-top: 20px;
+    text-align: center;
+}
+.main2_new {
+    display: none;
+    /* display: inline; */
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: beige;
+    width:100%;
+    
+}
+.main2_new_mob {
+    display: inline;
+}
+.names {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    gap: 2px;
+    font-size: x-large;
+}
+
+.names p {
+    margin-bottom: 5px;
+}
+.and {
+    font-size: larger;
+    margin: 0px ;
+    padding: 0px 0px;
+}
+.date-time {
+    display: block;
+    /* flex-direction:column; */
+}
+
+#input {
+    width: 100% !important;
     border-radius: 5px;
 }
 
-.content {
-    display:flex;
-    flex-wrap: wrap;
-    gap: 50px; 
-    justify-content: center;
-
-    /* display: grid; */
-    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
-
-    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-    /* grid-gap: 50px; Add some space between images */
-    align-items: center;
-
+#numberInput {
+    width: 100% !important;
 }
-.content img {
-    /* max-width: 100%; */
-    height: 200px; /* Maintain aspect ratio */
-    width: 100%;
+body {
+    font-size: larger;
+}
+.cordially p {
+    margin-bottom: 0px;
 }
 
-.content .card {
-    width: 320px;
-    
-    /* height: 300px; */
-    /* padding: 50px; */
-    transition: transform 0.3s;
+.address {
+    font-size: larger;
 }
-
-.content .card:hover {
-    transform: scale(1.05);
-}
-
-
-
-
-/* ------------------------------------ Body contacts ------------------------------- */
-
-.contacts-group {
-    padding: 50px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-}
-.contacts-group a{
-    text-decoration: none;
-}
-.group-1, .group-2 {
-    display: flex;
-    gap: 50px;
-}
-
-.contacts-group .card {
-    width: 500px;
-    height: 300px;
-    padding: 50px;
-    transition: transform 0.3s;
-}
-
-.contacts-group .card:hover {
-    transform: scale(1.1); 
-}
-
-@media (max-width:600px){
-
-.group-1, .group-2, .contacts-group {
-    flex-direction: column;
-    gap:20px
-}
-.contacts-group .card {
-    width: 300px;
-    height: 200px;
-    padding: 20px 0px;
+#writeToFile, #numberInput, #wisher {
+    border-radius: 5px;
 }
 
 }
-
-
-/* ----------------------- Footer------------------------------  */
-
-footer{
-    background-color: rgb(235, 232, 232);
-    text-align: center;
-
-}
-
-.footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-}
-
-
-.footer-element {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 200px;
-    text-align: center;
-    /* justify-content: center; */
-    /* justify-items: center; */
-    align-items: center;
-    padding: 20px 20px;
-    /* background-color: rgb(195, 194, 194); */
-}
-
-.footer div {
-    display: flex;
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-.footer img {
-    width: 40px;
-    height: 30px;
-    padding-right: 10px;
-}
-
-.footer p {
-    border-top: 3px solid grey;
-    padding-top: 20px;
-}
-
-footer p {
-    display: block;
-    border-top: 2px solid grey;
-    padding: 10px 0px;
-}
-
-@media (max-width:600px){
-
-.footer {
-
-    flex-wrap:wrap ;
-    gap: 20px;
-    padding-top: 10px;
-
-}    
-.footer-element {
-    height: auto;
-    padding: 2px 2px;
-}
-.footer p {
-    padding: 2px;
-}
-
-}
-    
