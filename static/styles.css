@@ -1,8 +1,16 @@
-.brand {
+.brand-group{
+    display: flex;
+    background-color: rgb(233, 212, 157);
+
+}
+.brand, .brand-contacts {
     display: flex;
     align-items: center;
-    background-color: rgb(233, 212, 157);
     
+}
+.brand-contacts{
+    border-left:2px dotted goldenrod;
+    margin: 10px 0px;
 }
 .brand img {
     margin-left: 20px;
@@ -21,6 +29,15 @@ a {
 }
 
 @media (max-width:600px){
+    .brand-group {
+        flex-direction: column;
+    }
+    .brand-contacts{
+        border-top: 2px dotted goldenrod;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        margin: 0px 10px;
+    }
     .brand h1 {
         font-size: 30px;
         margin-left: 15px;
@@ -28,6 +45,8 @@ a {
     .brand img {
         transform: scale(0.8);
     }
+
+
 }
 
 /* ------------------------------------------- Body ------------------------------------  */
