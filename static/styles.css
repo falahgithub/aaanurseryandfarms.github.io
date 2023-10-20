@@ -6,14 +6,25 @@
 .brand, .brand-contacts {
     display: flex;
     align-items: center;
+    gap:0px
     
 }
 .brand-contacts{
     border-left:2px dotted goldenrod;
-    margin: 10px 0px;
+    margin-left: 10px;
+    align-items:center;
+    justify-content: center;
+    
 }
+.brand-contacts img {
+    padding-bottom: 15px;
+}
+/* .brand-contacts p {
+    /* width: 148px; */
+
 .brand img {
     margin-left: 20px;
+
 }
 
 .brand h1 {
@@ -22,6 +33,16 @@
     font-size: 50px;
     font-family:'Times New Roman', Times, serif;
     color: rgb(164, 7, 7);
+}
+.brand-contacts img {
+    /* transform: scale(0.5);
+
+     */
+     
+     /* text-align: center; */
+     width: 30px;
+     margin-left: 35px;
+     margin-right: 10px;
 }
 
 a {
@@ -35,15 +56,26 @@ a {
     .brand-contacts{
         border-top: 2px dotted goldenrod;
         border-left: 0px;
-        padding-bottom: 20px;
+        /* padding-bottom: 0px; */
         padding-top: 10px;
-        margin: 0px 10px;
+        margin: 0px 0px;
+        font-size: x-small;
+        gap: 0px;
+        align-items:flex-start;
+
     }
+    .brand-contacts img {
+      
+         width: 15px;
+         margin-left: 15px;
+         margin-right: 5px;
+    }
+
     .brand h1 {
-        font-size: 30px;
+        font-size: 20px;
         margin-left: 15px;
     }
-    .brand img {
+    .brand img{
         transform: scale(0.8);
     }
 
@@ -79,22 +111,24 @@ main {
 
 @media (max-width:600px){
     #carouselExampleIndicators {
-        /* padding: 20px 0px; */
-        /* padding-bottom: 50px; */
-        margin: 10px 0px;
-        /* height: 100px; */
-    
+        margin: 10px 0px;    
     }
     
     .carousel-item img {
         /* padding: 5px 5px; */
         border-radius: 5px;
         width: 100vh;
-        height: 80px;
+        height: 120px;
         object-fit: cover;
         border: 2px solid black;
     }
-
+    .navbar-brand    {
+        font-size: smaller;
+        font-weight: 600;
+    }
+    #navbarSupportedContent li {
+        font-size: smaller;
+    }
 }
 
 .content {
