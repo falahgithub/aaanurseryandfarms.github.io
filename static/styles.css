@@ -49,7 +49,24 @@ a {
     text-decoration: none;
 }
 
-@media (max-width:600px){
+
+@media (min-width:651px) and (max-width:1000px) {
+    .brand h1 {
+        font-size: 30px;
+        margin-left:20px ;
+    }
+    .brand {
+        width: auto;
+    }
+    .brand-contacts {
+        flex-direction: row;
+        font-size: x-small;
+    }
+}
+
+
+
+@media (max-width:650px){
     .brand-group {
         flex-direction: column;
     }
