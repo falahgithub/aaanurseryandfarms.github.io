@@ -153,6 +153,9 @@ main {
     flex-wrap: wrap;
     gap: 50px; 
     justify-content: center;
+    margin: 0px 100px;
+    margin-top: 50px;
+   
 
     /* display: grid; */
     /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
@@ -169,17 +172,60 @@ main {
 }
 
 .content .card {
-    width: 320px;
+    width: 200px;
     
-    /* height: 300px; */
+    height: 400px;
     /* padding: 50px; */
     transition: transform 0.3s;
 }
 
+.content h5 {
+    height: 50px;
+    border-bottom: 2px solid grey;
+}
 .content .card:hover {
     transform: scale(1.05);
 }
 
+
+
+.details_flower {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.details_flower_images {
+    display: flex;
+    gap: 40px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.details_flower_images img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.details_flower_description {
+    text-align: center;
+    margin-top: 10px;
+    width: 60%;
+}
+
+.details_flower_description h1 {
+    padding-bottom: 40px;
+    border-bottom: 5px dashed goldenrod;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.details_flower_description p {
+    margin: 20px 0px;
+    text-align: justify;
+}
 
 
 
