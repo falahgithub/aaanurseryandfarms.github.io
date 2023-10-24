@@ -30,7 +30,7 @@
 .brand h1 {
     padding: 20px 0px;
     margin-left: 40px;
-    font-size: 50px;
+    font-size: 40px;
     font-family:'Times New Roman', Times, serif;
     color: rgb(164, 7, 7);
 }
@@ -52,7 +52,7 @@ a {
 
 @media (min-width:651px) and (max-width:1000px) {
     .brand h1 {
-        font-size: 30px;
+        font-size: 20px;
         margin-left:20px ;
     }
     .brand {
@@ -197,6 +197,33 @@ main {
     .content .card:hover {
         transform: scale(1.02);
     }
+    .content .card {
+        width: 200px;
+        
+        height: 370px;
+        /* padding: 50px; */
+        /* transition: transform 0.3s; */
+    }
+    .content h5 {
+        height: 30px;
+        font-size:smaller;
+        border-bottom: 2px solid grey;
+    }
+   
+    .content p {
+        height: 35px;
+        margin-bottom: 5px;
+        font-size:smaller;
+        /* border-bottom: 2px solid grey; */
+    }
+    .content .card a {
+        padding: 2px 5px;
+        font-size: smaller;
+        height: 27px;
+    }
+    .card-body {
+        height: 150px;
+    }
 }
 
 
@@ -246,6 +273,7 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-size: smaller;
     }
     .details_flower_images {
         display: flex;
