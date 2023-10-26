@@ -1,3 +1,6 @@
+a {
+    text-decoration: none;
+}
 .brand-group{
     display: flex;
     background-color: rgb(233, 212, 157);
@@ -142,11 +145,13 @@ a {
 /* ------------------------------------------- Body ------------------------------------  */
 
 main {
-    background-color: beige;
+    /* background-color: beige; */
+    background-color: whitesmoke;
     margin: 10px 10px;
     padding: 20px 20px;
     border: 2px solid grey;
     border-radius: 5px;
+    
 }
 
 #carouselExampleIndicators {
@@ -188,14 +193,76 @@ main {
     }
 }
 
+.carousel_and_content{
+    /* color: orange; */
+    /* display: inline-flex; */
+    /* gap: 10px; */
+    margin-left: 30%;
+
+
+}
+.sidepanel {
+    background-color: whitesmoke;
+    width: 20%;
+    margin-left: 50px;
+    height: 600px;
+    z-index: 2;
+    /* position:static; */
+    position:fixed;
+    top: 180px; 
+    /* padding-right: 2px;
+    border-right: 1px goldenrod dotted; */
+    /* font-size: x-small; */
+  
+}
+.sidepanel h5{
+    /* color: orange; */
+    border-bottom: 1px solid grey;
+    padding:2px 0px;
+    padding-left: 110px;
+    color: black;
+    font-size: smaller;
+    margin: 0px 0px;
+    /* font-size: x-small; */
+
+    
+}
+
+.sidepanel a{ 
+    color: black;
+}
+.sidepanel p{
+    /* color: orange; */
+    /* border-bottom: 1px solid grey; */
+    padding-left: 115px;
+    font-size: smaller;
+ 
+    margin: 0px 0px;
+    
+}
+@media (min-width:1301px) and (max-width:1400px) {
+    .sidepanel {
+        font-size: x-small;
+    }
+}
+@media (max-width:1300px){
+    .sidepanel {
+        display: none;
+    }
+    .carousel_and_content {
+        /* width: 100%; */
+        margin-left: 0%;
+    }
+}
 .content {
+    
     display:flex;
     flex-wrap: wrap;
     gap: 50px; 
     justify-content: center;
     margin: 0px 100px;
     margin-top: 50px;
-   
+    /* margin-left: 500px; */
 
     /* display: grid; */
     /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
@@ -412,6 +479,8 @@ main {
 footer{
     background-color: rgb(235, 232, 232);
     text-align: center;
+    z-index: 3;
+    position: relative;
 
 }
 
