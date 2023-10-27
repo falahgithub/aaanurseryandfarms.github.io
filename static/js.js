@@ -44,9 +44,24 @@ document.addEventListener('DOMContentLoaded', function() {
     //   }
     });
   });
-document.addEventListener('DOMContentLoaded', function() {
-window.addEventListener('scroll', function() {
-        const scrollTop = window.scrollY;
-        console.log("The value is " + scrollTop)
-})
-})
+// document.addEventListener('DOMContentLoaded', function() {
+// // window.addEventListener('scroll', function() {
+// //         const scrollTop = window.scrollY;
+// //         console.log("The value is " + scrollTop)
+// // })
+// const btn = document.getElementById("formButton");
+// console.log(btn);
+// btn.addEventListener("click", () => {
+//   const formName = document.getElementById("formName"); 
+//   const formEmail = document.getElementById("formEmail").value; 
+//   const formNumber= document.getElementById("formNumber").value ;
+//   const formTitle = document.getElementById("formTitle").value ;
+//   const formMessage = document.getElementById("formMessage").value;
+  
+//   console.log(formName);
+
+
+
+// })
+
+// })
