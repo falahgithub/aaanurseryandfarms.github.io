@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
       const formNumber= document.getElementById("formNumber").value ;
       const formTitle = document.getElementById("formTitle").value ;
       const formMessage = document.getElementById("formMessage").value;
-      const formCheckbox = document.getElementById("formCheckbox").value;
+      // const formCheckbox = document.getElementById("formCheckbox").value;
       
-      console.log(formCheckbox);
+      // console.log(formCheckbox);
 
 
       alert("Thankyou! Your Query has been submitted successfully. We will respond to you as soon as possible.")
