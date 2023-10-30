@@ -594,6 +594,12 @@ content: '*';
         width:100%;
         padding: 5px 10px;
     }
+    .form .promotional{
+        /* display: inline-block; */
+        /* width: 300px; */
+        /* display: flex; */
+        display: none;
+    } 
 }
 
 .privacy_policy {
@@ -630,6 +636,141 @@ content: '*';
     .privacy_policy .last_updated {
         font-size:xx-small;
     }
-    
+}
+
+.circular-icons {
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+/* margin-left: 20%; */
+gap: 20px;
+transition: transform 0.3;
+justify-content: center;
+}
+.circular-icons a {
+    color: grey;
+}
+
+.icon-container:hover {
+    transform: scale(1.05);
+}
+.circular-icons .icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+.icon-container {
+    background-color: whitesmoke;
+    text-align: center;
+    transition: transform 0.2s;
 
 }
+
+/*--------------------------------------------------- banner */
+
+.first_banner {
+    width: 100%;
+    height: 500px;
+}
+
+.first_banner  img{
+    width: 100%;
+    height: 500px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.blog_title {
+    text-align: center;
+    font-size: 30px;
+    color: grey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 50px;
+}
+.blog_articles {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+
+}
+
+#blog_items {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+
+#blog_items img {
+    height: 250px;
+}
+
+#blog_items a {
+    text-decoration: none;
+    color: goldenrod;
+}
+.blog_article_page_image img {
+    height: 600px;
+}
+
+
+@media (max-width:600px) {
+    .first_banner {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .first_banner  img{
+        width: 100%;
+        height: 200px;
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
+
+    
+.blog_title {
+    text-align: center;
+    font-size: 15px;
+    color: grey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+}
+.blog_articles {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+
+}
+
+#blog_items {
+    width: 150px;
+    height: 200px;
+    text-align: center;
+}
+
+#blog_items img {
+    height: 100px;
+}
+
+#blog_items a {
+    text-decoration: none;
+    color: goldenrod;
+    font-size: 10px;
+}
+#blog_items h5 {
+    font-size: 10px;
+}
+#blog_items .card-body {
+    height: 100px;
+}
+.blog_article_page_image {
+    height: 300px;
+}
+.blog_article_page_image img {
+    height: 300px;
+}
+}
+
