@@ -73,6 +73,7 @@ a {
 }
 
 
+
 @media (min-width:651px) and (max-width:1120px) {
     .brand h1 {
         font-size: 20px;
@@ -85,6 +86,7 @@ a {
         flex-direction: row;
         font-size: smaller;
     }
+    
     /* .brand-contacts img {
         /* transform: scale(0.5);
     
@@ -141,6 +143,7 @@ a {
     .brand img{
         transform: scale(0.8);
     }
+    
 
 
 }
@@ -444,6 +447,16 @@ main {
     display: flex;
     gap: 50px;
 }
+.group-2 {
+    flex-wrap: wrap;
+}
+
+.contacts-group .card-text img {
+    width: 40px;
+    height: 40px;
+    /* padding-top: 5px; */
+    margin-top: 10px;
+}
 
 .contacts-group .card {
     width: 500px;
@@ -476,6 +489,12 @@ main {
 .contactus-address {
     /* font-size: smaller; */
     width:250px;
+}
+.contacts-group .card-text img {
+    width: 30px;
+    height: 30px;
+    /* padding-top: 5px; */
+    margin-top: 10px;
 }
 
 }
